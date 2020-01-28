@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: com.flares.countryInfo.CountryApiTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 9.769 s <<< FAILURE! - in com.flares.countryInfo.CountryApiTest
+testGetCountry  Time elapsed: 0.857 s  <<< FAILURE!
+java.lang.AssertionError: 
+
+Expecting:
+ <"{"name":"Bahrain","continent":"Asia","population":617000,"life_expectancy":73,"countryLanguage":[{"language":"Arabic"},{"language":"English"}]}">
+to contain:
+ <"Hello, World"> 
+	at com.flares.countryInfo.CountryApiTest.testGetCountry(CountryApiTest.java:68)
+
