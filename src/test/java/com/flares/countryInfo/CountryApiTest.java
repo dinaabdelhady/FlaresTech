@@ -53,17 +53,20 @@ public class CountryApiTest {
 	}
 	
 	//INTERNAL_ERROR
-//	@Test
-//	public void testInternalError() throws Exception {
-//
-//		RequestBuilder requestBuilder = MockMvcRequestBuilders
-//                .get("/BHR")
-//                .accept(MediaType.APPLICATION_JSON);
-//
-//        MvcResult result = mvc.perform(requestBuilder).andReturn();
-//
-//        int status = result.getResponse().getStatus();
-//        assertEquals(HttpStatus.INTERNAL_SERVER_ERROR, status);
-//	}
+<<<<<<< HEAD
+=======
+	@Test
+	public void testInternalError() throws Exception {
+
+		RequestBuilder requestBuilder = MockMvcRequestBuilders
+                .get("/BHR")
+                .accept(MediaType.APPLICATION_JSON);
+
+        MvcResult result = mvc.perform(requestBuilder).andReturn();
+
+        int status = result.getResponse().getStatus();
+        assertEquals(HttpStatus.INTERNAL_SERVER_ERROR.value(), status);
+	}
+>>>>>>> 32a84f051bf89135c24994f4ba04f5f9df2b4a8c
 	
 }
