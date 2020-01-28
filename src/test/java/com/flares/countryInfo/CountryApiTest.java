@@ -35,7 +35,7 @@ public class CountryApiTest {
         MvcResult result = mvc.perform(requestBuilder).andReturn();
 
         int status = result.getResponse().getStatus();
-        assertEquals(HttpStatus.OK, status);
+        assertEquals(HttpStatus.OK.value(), status);
 	}
 	
 	//INVALID_COUNTRY_CODE
@@ -49,7 +49,7 @@ public class CountryApiTest {
         MvcResult result = mvc.perform(requestBuilder).andReturn();
 
         int status = result.getResponse().getStatus();
-        assertEquals(HttpStatus.INTERNAL_SERVER_ERROR, status);
+        assertEquals(HttpStatus.INTERNAL_SERVER_ERROR.value(), status);
 	}
 	
 	//INTERNAL_ERROR
@@ -63,7 +63,7 @@ public class CountryApiTest {
         MvcResult result = mvc.perform(requestBuilder).andReturn();
 
         int status = result.getResponse().getStatus();
-        assertEquals(HttpStatus.INTERNAL_SERVER_ERROR, status);
+        assertEquals(HttpStatus.INTERNAL_SERVER_ERROR.value(), status);
 	}
 	
 }
