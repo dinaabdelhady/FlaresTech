@@ -53,8 +53,6 @@ public class CountryApiTest {
 	}
 	
 	//INTERNAL_ERROR
-<<<<<<< HEAD
-=======
 	@Test
 	public void testInternalError() throws Exception {
 
@@ -67,6 +65,5 @@ public class CountryApiTest {
         int status = result.getResponse().getStatus();
         assertEquals(HttpStatus.INTERNAL_SERVER_ERROR.value(), status);
 	}
->>>>>>> 32a84f051bf89135c24994f4ba04f5f9df2b4a8c
 	
 }
